@@ -27,6 +27,7 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.Location = New System.Drawing.Point(85, 59)
         Me.Button1.Name = "Button1"
