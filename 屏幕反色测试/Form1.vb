@@ -1,4 +1,5 @@
-﻿Imports 反色模块
+﻿Imports System.Reflection
+Imports 反色模块
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim www As Graphics = Graphics.FromHdc(ApiClass.GetWindowDC(ApiClass.GetDesktopWindow))
@@ -10,3 +11,16 @@ Public Class Form1
         www.DrawIcon(Icon.FromHandle(handle), scr.WorkingArea)
     End Sub
 End Class
+Public Module Module1
+    Function Func1(sender As Object, args As ResolveEventArgs) As Assembly
+        If New AssemblyName(args.Name).Name = "反色模块" Then
+            Return Assembly.Load(My.Resources.反色模块)
+        End If
+    End Function
+    Sub Main()
+        Application.Run(New Form1)
+    End Sub
+    Sub New()
+        AddHandler AppDomain.CurrentDomain.AssemblyResolve, AddressOf Func1
+    End Sub
+End Module

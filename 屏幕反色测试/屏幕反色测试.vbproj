@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2E5036C7-4D5F-4FCF-AF29-B90FF571F1DD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>屏幕反色测试.My.MyApplication</StartupObject>
+    <StartupObject>Sub Main</StartupObject>
     <RootNamespace>屏幕反色测试</RootNamespace>
     <AssemblyName>屏幕反色测试</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <Deterministic>true</Deterministic>
     <PublishUrl>publish\</PublishUrl>
@@ -149,10 +149,12 @@
     <ProjectReference Include="..\反色模块\反色模块.csproj">
       <Project>{3aa7d675-6304-4784-8826-e61f2a541443}</Project>
       <Name>反色模块</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="arrows_rotate_anti_128px_1182536_easyicon.net.ico" />
+    <None Include="Resources\反色模块.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
