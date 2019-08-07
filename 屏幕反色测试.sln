@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "屏幕反色测试", "屏幕反色测试\屏幕反色测试.vbproj", "{2E5036C7-4D5F-4FCF-AF29-B90FF571F1DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "反色模块", "反色模块\反色模块.csproj", "{3AA7D675-6304-4784-8826-E61F2A541443}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E5036C7-4D5F-4FCF-AF29-B90FF571F1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5036C7-4D5F-4FCF-AF29-B90FF571F1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5036C7-4D5F-4FCF-AF29-B90FF571F1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5036C7-4D5F-4FCF-AF29-B90FF571F1DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA7D675-6304-4784-8826-E61F2A541443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA7D675-6304-4784-8826-E61F2A541443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA7D675-6304-4784-8826-E61F2A541443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA7D675-6304-4784-8826-E61F2A541443}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5BAE7A7-9DF6-4CF9-90C0-B19BDFACB4E4}
+	EndGlobalSection
+EndGlobal
